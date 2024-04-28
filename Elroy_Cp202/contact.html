@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Us - Fight Covid</title>
+
+
+<script>
+   
+    function validateForm() {
+        var firstName = document.getElementById("name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+
+       
+        if (firstName.toLowerCase() === lastName.toLowerCase()) {
+            alert("First and last names cannot be the same.");
+            return false;
+        }
+
+        if (!email.includes("@laurier.ca")) {
+            alert("Please use a valid Laurier email address.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+<form action="#" method="post" onsubmit="return validateForm()">
+</form>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+      
+            <a href="index.html"><img src="images/image4.jpg" alt="Image 4"></a>
+            
+            <div class="contact-page">
+                <h1 class="contact-header">The Covid Clinic</h1>
+            </div>
+            <div class="greeting-container">
+                <h2 id="greeting"></h2>
+            <nav>
+                <ul>
+                    <li><a href="contact.html" class="contact-header">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Parking Info</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-container">
+
+            <main class="main-content slideshow-container">
+              
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-86.791789!3d36.161217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864667355555555%3A0xabcdef0123456789!2sYour%20Clinic%20Name!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                    <p>123 Clinic Street, Cityville, State</p>
+                    <p>Email: info@fightcovid.com</p>
+                    <p>Phone: 123-456-7890</p>
+                </address>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message</legend>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="10" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <label for="subscribe">Would you like to be contacted?</label></br>
+                        <label for="subscribe">Yes</label><input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">No</label><input type="checkbox" id="subscribe" name="subscribe">
+                        </br>
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="contact-email" name="contact-method" value="email">
+                        <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                        </br>
+                        <label for="birthdate">Birthdate:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </fieldset>
+
+                    <input type="submit" value="Submit">
+                </form>
+                
+              
+                <div class="mySlides">
+                    <img src="images/image1.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="images/image2.jpg" alt="Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="images/image3.jpg" alt="Image 3">
+                </div>
+            </main>
+
+            <div class="right-column">
+                <h2>Quote of the Day</h2>
+                <p>"The journey of a thousand miles begins with one step" - Lao Tzu</p>
+
+                <h2>Informative Videos</h2>
+                <a href="https://youtu.be/oqFn6AHoJZQ?si=OcLgPv_bs-SKgXLg" target="_blank">How COVID Spreads</a>
+                <a href="https://youtu.be/3SfHdSHK-g0?si=hR1hUJd8i0BOL29G" target="_blank">How to Wash Hands Properly</a>
+                <a href="https://youtu.be/w5HvxsOo00E?si=0K8sAIVOkdcPMxXg" target="_blank">Story of COVID</a>
+
+                <h2>Follow Us on Social Media</h2>
+                <div class="social-media-icons">
+                    <a href="https://twitter.com/valorant" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/valorant" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/valorant" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+
+        </div>
+
+        <footer>
+        
+            <p>&copy; 2023 Fight Covid | Fake Address | Phone: 123-456-7890 | Email: info@fightcovid.com</p>
+        </footer>
+
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        var greetingElement = document.getElementById("greeting");
+        var currentTime = new Date().getHours();
+
+        if (currentTime >= 6 && currentTime < 12) {
+            greetingElement.innerText = "Good Morning";
+        } else if (currentTime >= 12 && currentTime < 16) {
+            greetingElement.innerText = "Good Afternoon";
+        } else {
+            greetingElement.innerText = "Good Evening";
+        }
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); 
+        }
+    </script>
+
+</body>
+</html>
