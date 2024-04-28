@@ -1,0 +1,194 @@
+
+a:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+a:active,
+button:active,
+input[type="submit"]:active,
+input[type="text"]:active,
+input[type="email"]:active,
+textarea:active {
+    border: 2px solid #007bff; 
+    outline: none; 
+}
+
+
+a:active,
+button:active {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.main-content img:hover {
+    border: 2px solid #007bff; 
+}
+
+
+
+
+
+.contact-header:hover {
+    border: 2px solid #007bff; 
+
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    background-color: maroon;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none; 
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main.main-content {
+    flex: 1; 
+    padding: 20px;
+    background-color: white;
+}
+
+
+.right-column {
+    flex: 0 0 30%; 
+    padding: 20px;
+    background-color: peachpuff;
+    color: #333;
+}
+
+.right-column h2 {
+    margin-bottom: 20px;
+}
+
+.right-column p {
+    font-style: italic;
+    color: black;
+}
+
+.right-column a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right-column a:hover {
+    text-decoration: underline;
+}
+
+.social-media-icons img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+.video-container {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    main.main-content,
+    .right-column {
+        width: 100%; 
+        margin-top: 20px;
+    }
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    clear: both;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.vaccine-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.vaccine-schedule th, .vaccine-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.vaccine-schedule th {
+    background-color: #f2f2f2;
+}

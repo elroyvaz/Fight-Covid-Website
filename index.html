@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fight Covid</title>
+</head>
+
+<script>
+
+    function updateGreeting() {
+        var now = new Date();
+        var hours = now.getHours();
+
+        var greeting = "Good ";
+        if (hours >= 6 && hours < 12) {
+            greeting += "Morning";
+        } else if (hours >= 12 && hours < 16) {
+            greeting += "Afternoon";
+        } else {
+            greeting += "Evening";
+        }
+
+     
+        document.getElementById("greeting").innerText = greeting;
+    }
+
+
+    window.onload = updateGreeting;
+</script>
+
+
+<header>
+
+    <a href="index.html"><img src="images/image4.jpg" alt="Image 4"></a>
+    <div class = "main-content">
+        <h1>The Covid Clinic</h1>
+    </div>
+    <div class="greeting-container">
+        <h2 id="greeting"></h>
+    </div>
+    <nav>
+    </nav>
+</header>
+
+<body>
+
+    <header>
+           
+        </a>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Parking Info</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="content-container">
+
+            <main class="main-content">
+            
+                <h1>Welcome to Covid Clinic</h1>
+
+                <p>
+                        At Covid Clinic, we are committed to ensuring the health and safety of our community through comprehensive COVID-19 vaccination services. Our state-of-the-art clinic is equipped to provide a seamless and efficient vaccination experience. Our team of dedicated healthcare professionals is devoted to delivering high-quality care and guidance throughout the vaccination process. We prioritize accessibility and convenience, offering flexible appointment scheduling and a welcoming environment to make your vaccination journey as smooth as possible. 
+                    Join us in the fight against COVID-19 as we strive to build a healthier and safer community for everyone. Together, let's pave the way for a future where health and well-being prevail, and the resilience of our community shines through every triumph over adversity.
+                    
+                <h2>Our Services</h2>
+
+                <ul>
+                    <li>COVID-19 Vaccinations for all age groups</li>
+                    <li>Booster Dose Administration</li>
+                    <li>Vaccination Consultations and Information</li>
+                    <li>Walk-in and Scheduled Appointments</li>
+                    <li>Safe and Sterile Environment</li>
+                </ul>
+
+                <h2>Meet Our Team</h2>
+
+                <p>
+                    Our dedicated team of healthcare professionals is here to guide you through the vaccination process.
+                    We prioritize your well-being and are committed to making your visit to our clinic a positive experience.
+                </p>
+
+                <h2>COVID-19 Vaccination Schedule</h2>
+
+                <table class="vaccine-schedule">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Vaccine Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January 5, 2023</td>
+                            <td>10:00 AM - 6:00 PM</td>
+                            <td>Moderna</td>
+                        </tr>
+                        <tr>
+                            <td>January 10, 2023</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                            <td>Moderna</td>
+                        </tr>
+                        <tr>
+                            <td>January 15, 2023</td>
+                            <td>10:00 AM - 6:00 PM</td>
+                            <td>Pfizer</td>
+                        </tr>
+                        <tr>
+                            <td>January 20, 2023</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                            <td>Pfizer</td>
+                        </tr>
+                        <tr>
+                            <td>January 30, 2023</td>
+                            <td>10:00 AM - 6:00 PM</td>
+                            <td>Moderna</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+
+                <h2>Gallery</h2>
+
+                <main class="main-content">
+                    <img src="images/image1.jpg" alt="Image 1">
+                    <img src="images/image2.jpg" alt="Image 2">
+                    <img src="images/image3.jpg" alt="Image 3">
+                </main>
+                
+            </main>
+
+   
+            <div class="right-column">
+                <h2>Quote of the Day</h2>
+                <p>"The journey of a thousand miles begins with one step" - Lao Tzu</p>
+
+                <h2>Informative Videos</h2>
+                <a href="https://youtu.be/oqFn6AHoJZQ?si=OcLgPv_bs-SKgXLg" target="_blank">How COVID Spreads</a>
+                <a href="https://youtu.be/3SfHdSHK-g0?si=hR1hUJd8i0BOL29G" target="_blank">How to Wash Hands Properly</a>
+                <a href="https://youtu.be/w5HvxsOo00E?si=0K8sAIVOkdcPMxXg" target="_blank">Story of COVID</a>
+
+                <h2>Follow Us on Social Media</h2>
+                <div class="social-media-icons">
+                    <a href="https://twitter.com/valorant" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/valorant" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/valorant" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+
+        <footer>
+           
+            <p>&copy; 2023 Fight Covid | Fake Address | Phone: 123-456-7890 | Email: info@fightcovid.com</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
